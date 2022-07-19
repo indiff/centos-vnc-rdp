@@ -34,7 +34,7 @@ Features:
 
 Let's get started (via root user)
 
-    sudo curl -sSL https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/main/install.sh | sudo bash
+    sudo curl -sSL https://raw.githubusercontent.com/indiff/centos-vnc-rdp/master/download/main/install.sh | sudo bash
 
 
 Now that you have done it, you can connect via RDP (IP: 3389)
