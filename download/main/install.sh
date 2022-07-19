@@ -20,7 +20,7 @@ chmod 0644 /var/swapd
 swapon /var/swapd
 echo '/var/swapd   swap   swap   default 0 0' >> /etc/fstab
 echo "---------------------------------------------------------------------------------------------------------------------"
-echo "Swaps Memory is Created  is [OK]"
+echo "交换内存创建 [OK]"
 echo "---------------------------------------------------------------------------------------------------------------------"
 
 echo -e "\n"
@@ -34,7 +34,7 @@ yum install fontforge -y
 yum install ibus-libpinyin im-chooser -y
 localectl set-locale LANG=zh_CN.UTF8
 echo "---------------------------------------------------------------------------------------------------------------------"
-echo "Desktop environment is installed  is [OK]"
+echo "桌面环境 [OK]"
 echo "---------------------------------------------------------------------------------------------------------------------"
 
 echo -e "\n"
@@ -50,36 +50,36 @@ echo -e "\n"
 cat /etc/yum.repos.d/google-chrome.repo
 yum install google-chrome-stable -y
 echo "---------------------------------------------------------------------------------------------------------------------"
-echo "The Chrome Already installed  is [OK]"
+echo "谷歌浏览器 [OK]"
 echo "---------------------------------------------------------------------------------------------------------------------"
 
 echo -e "\n"
 sudo cd /root
-rpm -Uvh --force https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/nux-dextop/nux-dextop-release-0-5.el7.nux.noarch.rpm --quiet
+rpm -Uvh --force https://raw.githubusercontent.com/indiff/centos-vnc-rdp/master/download/nux-dextop/nux-dextop-release-0-5.el7.nux.noarch.rpm --quiet
 yum install remmina remmina-plugins-* -y
 echo "---------------------------------------------------------------------------------------------------------------------"
-echo "The Remmina Already installed  is [OK]"
+echo "The nux-dextop-release Already installed  is [OK]"
 echo "---------------------------------------------------------------------------------------------------------------------"
 
-echo -e "\n"
-sudo cd /root
-rpm -Uvh --force https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/wine/wine32-release.rpm --quiet
-yum install wine.i686 -y
-yum install wine -y
-sudo wget -O /usr/share/wine/fonts/msyh.ttc https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/msyh.ttc
-sudo wget -O /usr/share/wine/fonts/msyhbd.ttc https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/msyhbd.ttc
-sudo wget -O /usr/share/wine/fonts/msyhl.ttc https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/msyhl.ttc
-sudo wget -O /usr/share/wine/fonts/simfang.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/simfang.ttf
-sudo wget -O /usr/share/wine/fonts/simhei.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/simhei.ttf
-sudo wget -O /usr/share/wine/fonts/simkai.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/simkai.ttf
-sudo wget -O /usr/share/wine/fonts/SIMLI.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/SIMLI.ttf
-sudo wget -O /usr/share/wine/fonts/simsun.ttc https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/simsun.ttc
-sudo wget -O /usr/share/wine/fonts/SIMYOU.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/SIMYOU.ttf
-sudo wget -O /usr/share/wine/fonts/仿宋_GB2312.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/仿宋_GB2312.ttf
-sudo wget -O /usr/share/wine/fonts/楷体_GB2312.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/楷体_GB2312.ttf
-echo "---------------------------------------------------------------------------------------------------------------------"
-echo "The Wine Already installed  is [OK]"
-echo "---------------------------------------------------------------------------------------------------------------------"
+# echo -e "\n"
+# sudo cd /root
+# rpm -Uvh --force https://raw.githubusercontent.com/indiff/centos-vnc-rdp/master/download/wine/wine32-release.rpm --quiet
+# yum install wine.i686 -y
+# yum install wine -y
+# sudo wget -O /usr/share/wine/fonts/msyh.ttc https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/msyh.ttc
+# sudo wget -O /usr/share/wine/fonts/msyhbd.ttc https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/msyhbd.ttc
+# sudo wget -O /usr/share/wine/fonts/msyhl.ttc https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/msyhl.ttc
+# sudo wget -O /usr/share/wine/fonts/simfang.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/simfang.ttf
+# sudo wget -O /usr/share/wine/fonts/simhei.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/simhei.ttf
+# sudo wget -O /usr/share/wine/fonts/simkai.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/simkai.ttf
+# sudo wget -O /usr/share/wine/fonts/SIMLI.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/SIMLI.ttf
+# sudo wget -O /usr/share/wine/fonts/simsun.ttc https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/simsun.ttc
+# sudo wget -O /usr/share/wine/fonts/SIMYOU.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/SIMYOU.ttf
+# sudo wget -O /usr/share/wine/fonts/仿宋_GB2312.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/仿宋_GB2312.ttf
+# sudo wget -O /usr/share/wine/fonts/楷体_GB2312.ttf https://raw.githubusercontent.com/MeowLove/CentOS-One-click-Installation-of-Desktop-Environment-and-Remote-Desktop-Connection-RDP/master/download/ttf/楷体_GB2312.ttf
+# echo "---------------------------------------------------------------------------------------------------------------------"
+# echo "The Wine Already installed  is [OK]"
+# echo "---------------------------------------------------------------------------------------------------------------------"
 
 echo -e "\n"
 sudo cd /root
@@ -93,7 +93,7 @@ systemctl start xrdp
 firewall-cmd --add-port=3389/tcp --permanent
 firewall-cmd --reload
 echo "---------------------------------------------------------------------------------------------------------------------"
-echo "Remote connection RDP is installed  is [OK]"
+echo "远程连接 RDP 已安装 [OK]"
 echo "---------------------------------------------------------------------------------------------------------------------"
 
 echo -e "\n\n\n"
